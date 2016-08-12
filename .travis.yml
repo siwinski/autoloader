@@ -12,8 +12,22 @@ php:
 
 matrix:
     include:
-        - COMPOSER_PREFER_LOWEST=
-        - COMPOSER_PREFER_LOWEST=1
+        - php: 5.3
+          env: COMPOSER_PREFER_LOWEST=1
+        - php: 5.4
+          env: COMPOSER_PREFER_LOWEST=1
+        - php: 5.5
+          env: COMPOSER_PREFER_LOWEST=1
+        - php: 5.6
+          env: COMPOSER_PREFER_LOWEST=1
+        - php: 7.0
+          env: COMPOSER_PREFER_LOWEST=1
+        - php: 7.1
+          env: COMPOSER_PREFER_LOWEST=1
+        - php: nightly
+          env: COMPOSER_PREFER_LOWEST=1
+        - php: hhvm
+          env: COMPOSER_PREFER_LOWEST=1
 
 install:
     - composer self-update
