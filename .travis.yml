@@ -24,6 +24,10 @@ matrix:
           env: COMPOSER_PREFER_LOWEST=1
         - php: 7.1
           env: COMPOSER_PREFER_LOWEST=1
+        - php: nightly
+          env: COMPOSER_PREFER_LOWEST=1
+        - php: hhvm
+          env: COMPOSER_PREFER_LOWEST=1
 
 install:
     - composer self-update
